@@ -93,14 +93,17 @@ nav a{
   bottom: 0px;
 }
 
+.text {
+  background-color: white;
+  padding: 15px;
+  margin: 15px;
+
+}
 
 header{
-  background-attachment: fixed; /* Parallax effect */
-  background-position: center; /* Parallax effect */
-  background-size: cover; /* Parallax effect */
   color: white;
   background-color: cornflowerblue;
-  height: 400px; /* Parallax effect */
+  min-height: 400px;
 }
 
 .claws header{
@@ -113,6 +116,16 @@ header{
   background-repeat: no-repeat;
 }
 
+#clawscontainer {
+  display:grid;
+  grid-template: 400px 400px / 400px 400px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
 
 footer{
   width:100%;
