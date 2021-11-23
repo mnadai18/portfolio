@@ -39,7 +39,7 @@ p{
 
 a{
   font-size: 16px;
-  color: #B21F50;
+  color: #4881ea;
 }
 
 
@@ -83,8 +83,8 @@ nav a{
   font-weight: bold;
 }
 
-#currentLink {
-  color:cornflowerblue;
+#currentlink {
+  color:#4881ea;
   text-decoration-style: dotted;
 }
 
@@ -102,23 +102,32 @@ nav a{
 
 header{
   color: white;
-  background-color: cornflowerblue;
+  background-color: #4881ea;
   min-height: 400px;
 }
 
-.claws header{
+.claws {
   background-attachment: fixed; /* Parallax effect */
   background-position: center; /* Parallax effect */
   background-size: cover; /* Parallax effect */
   color: white;
-  height: 400px; /* Parallax effect */
+  min-height: 400px; /* Parallax effect */
   background-image: url("../images/galaxy.jpg");
   background-repeat: no-repeat;
+  margin-bottom: 10px;
 }
 
 #clawscontainer {
   display:grid;
-  grid-template: 400px 400px / 400px 400px;
+  grid-template:  500px / 1fr;
+}
+
+.astronaut-image > img {
+  width: 100%;
+}
+
+.research-image > img {
+  width: 100%;
 }
 
 .gallery {
