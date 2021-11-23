@@ -1,0 +1,250 @@
+main{
+  margin-bottom: 100px;  
+}
+
+caption{
+  margin:5px 0px;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: relative;
+  bottom: 40px;
+}
+
+.gallery {
+  display:grid;
+  grid-template: 500px 500px / 250px 250px 250px 250px 250px;
+}
+body{
+  color: #000000;
+  font-size: 16px;
+  margin: 1.2em;
+  background-size: cover ;
+  background-position: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color:#DDDDDD;
+  background-repeat: no-repeat;
+}
+
+h1{
+  color: #c12258;
+  font-size: 2em;
+  line-height: 64px;
+  text-align:center;
+}
+
+p{
+  padding-top: 15px;
+}
+
+a{
+  font-size: 16px;
+  color: #B21F50;
+}
+
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+
+nav{
+  background-color: #FFFFFF;
+  padding: 25px 0;    
+  text-align: left;   
+}
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+}
+
+#currentLink {
+  color: #000000;
+  text-decoration-style: dotted;
+}
+
+.skip a:focus {
+  position: relative;
+  bottom: 0px;
+}
+
+.container{
+  display: grid;
+  grid-template: auto auto auto auto auto / 1fr 5fr 1fr;
+  grid-row-gap: 15px;
+}
+
+header{
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  color: white;
+  height: 400px; /* Parallax effect */
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 1;
+}
+
+.claws header{
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  color: white;
+  height: 400px; /* Parallax effect */
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 1;
+  background-image: url("../images/galaxy.jpg");
+  background-repeat: no-repeat;
+}
+
+.about, .method, .clients, .contact {
+  grid-column: 2 / span 1;
+}
+
+.astronaut-image, .tech-image, .clients-image, .contact-image {
+  grid-column: 1/ span 3;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.astronaut-image{
+  grid-row: 2/ span 1;
+  width: 100%;
+  height: 100%;
+}
+
+.about{
+  grid-row: 2/ span 1;
+}
+
+.tech-image{
+  grid-row: 3/ span 1;
+}
+
+.method{
+  grid-row: 3/ span 1;
+}
+
+.role {
+  grid-row: 4/ span 1;
+}
+
+.research-image {
+  grid-row: 4/ span 1;
+}
+
+.contact {
+  grid-row: 5/ span 1;
+}
+
+.contact-image {
+  grid-row: 5/ span 1;
+}
+
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+
+  /* Your code here */
+  align-self: center;
+}
+ 
+@media screen and (min-width: 800px){
+  nav{
+    padding: 30px 0;
+
+    /* Your code here */
+    text-align: right;
+  }
+
+  .container{
+   display: grid;
+   grid-template: 400px 400px 400px 400px 400px / 50px auto 500px auto 50px;
+  }
+
+  
+
+  .about-image{
+    grid-column: 2 / span 2;
+  }
+
+  .about{
+    grid-column: 3 / span 2;
+  }
+
+  .method-image{
+    grid-column: 3 / span 2;
+  }
+
+  .method{
+    grid-column: 2 / span 2;
+  }
+
+  .clients-image{
+    grid-column: 2 / span 2;
+  }
+
+  .clients{
+    grid-column: 3 / span 2;
+  }
+
+  .contact-image{
+    grid-column: 3 / span 2;
+  }
+
+  .contact{
+    grid-column: 2 / span 2;
+  }
+
+}
+
+
+footer{
+  width:100%;
+  background:#000000;
+  text-align:center;
+  color: #FFFFFF;
+  /*margin: 1.2em; */
+  min-height:75px;
+  position:fixed;
+  bottom: 0px;
+  left:0px;
+  right: 0px;
+}
